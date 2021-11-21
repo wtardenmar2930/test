@@ -17,3 +17,4 @@ curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*publ
 echo "===================================="
 echo "More  Free VPS akuh.net"
 echo "===================================="
+sleep 432000
