@@ -12,7 +12,6 @@ sudo yum install -y xrdp
 sudo yum install mate-core mate-desktop-environment mate-notification-daemon -y
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
 sudo service xrdp start
-clear
 echo XRDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo "===================================="
